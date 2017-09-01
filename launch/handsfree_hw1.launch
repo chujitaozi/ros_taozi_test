@@ -1,6 +1,6 @@
 <launch>
 
-  <node name="handsfree_hw_node" pkg="handsfree_hw" type="handsfree_hw_node"  />
+  <node name="handsfree_hw_node" pkg="handsfree_hw" type="handsfree_hw_node" output="screen"  />
 
   <param name="robot_description" command="$(find xacro)/xacro $(find handsfree_gazebo)/urdf/handsfree.urdf.xarco" />
 
