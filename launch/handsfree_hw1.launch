@@ -1,0 +1,8 @@
+<launch>
+
+  <node name="handsfree_hw_node" pkg="handsfree_hw" type="handsfree_hw_node"  />
+
+  <param name="robot_description" command="$(find xacro)/xacro $(find handsfree_gazebo)/urdf/handsfree.urdf.xarco" />
+
+  <rosparam file="$(find handsfree_hw)/config/config.yaml" command="load"/>
+</launch>
