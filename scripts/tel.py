@@ -90,8 +90,8 @@ def vels(speed,turn):
 if __name__=="__main__":
     settings = termios.tcgetattr(sys.stdin)
     
-    rospy.init_node('turtlebot_teleop')
-    pub = rospy.Publisher('~cmd_vel', Twist, queue_size=5)
+    rospy.init_node('mobile_base')
+    pub = rospy.Publisher('~mobile_base_controller/cmd_vel', Twist, queue_size=5)
 
     x = 0
     th = 0
